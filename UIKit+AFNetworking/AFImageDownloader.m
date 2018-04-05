@@ -127,6 +127,11 @@
     configuration.allowsCellularAccess = YES;
     configuration.timeoutIntervalForRequest = 60.0;
     configuration.URLCache = [AFImageDownloader defaultURLCache];
+    
+    if (@available(iOS 11.0, *)) {
+        configuration.waitsForConnectivity = YES;
+        configuration.timeoutIntervalForResource = 300.0; // Default is 7 days...
+    }
 
     return configuration;
 }
