@@ -111,7 +111,7 @@
 
 + (NSURLCache *)defaultURLCache {
     return [[NSURLCache alloc] initWithMemoryCapacity:20 * 1024 * 1024
-                                         diskCapacity:150 * 1024 * 1024
+                                         diskCapacity:50 * 1024 * 1024
                                              diskPath:@"com.alamofire.imagedownloader"];
 }
 
