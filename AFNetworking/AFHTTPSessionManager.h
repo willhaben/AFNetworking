@@ -24,13 +24,7 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #endif
 #import <TargetConditionals.h>
-
-#if TARGET_OS_IOS || TARGET_OS_WATCH || TARGET_OS_TV
-#import <MobileCoreServices/MobileCoreServices.h>
-#else
 #import <CoreServices/CoreServices.h>
-#endif
-
 #import "AFURLSessionManager.h"
 
 /**
